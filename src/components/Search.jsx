@@ -1,9 +1,9 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 export default function Search({handleSearch}) {
 
   // This is a controlled component, so we need to keep track of the search term in state
-  const [search, setSearch] = React.useState('')
+  const [search, setSearch] = useState('')
 
   // This function will be called whenever the user types in the search box
   const handleChange = (e) => {
